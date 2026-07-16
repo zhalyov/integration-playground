@@ -14,7 +14,6 @@ The documents in this directory define **how the project is developed**, while t
 | [Git Workflow](git-workflow.md) | Defines Git usage and commit conventions. |
 | [Project Versioning](project-versioning.md) | Defines the project versioning strategy. |
 | [Development Workflow](development-workflow.md) | Describes the development lifecycle. |
-| [Documentation Standards](.) | Defines documentation conventions and structure. |
 | [Sprint Board](sprint-board.md) | Tracks project progress and milestones. |
 | [Architecture Decisions](../engineering/architecture-decisions/) | Records important engineering and architectural decisions. |
 
