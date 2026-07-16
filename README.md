@@ -2,15 +2,11 @@
 
 > A hands-on learning project for mastering **Frends iPaaS** through a real-world enterprise integration scenario.
 
----
-
 > **Project Status**
 >
 > 🟢 Active Development
 >
 > This repository is continuously updated while studying Frends Fundamentals and building a real-world integration project.
-
----
 
 ## 📖 About the Project
 
@@ -19,8 +15,6 @@ Integration Playground is a portfolio and learning project created to gain pract
 The project follows a realistic software delivery lifecycle—from business requirements and solution architecture to process implementation, monitoring, deployment, and documentation.
 
 Rather than studying isolated concepts, the project evolves around a single business scenario where every new Frends concept is applied in practice.
-
----
 
 ## 🎯 Project Goals
 
@@ -33,8 +27,6 @@ By completing this project I aim to:
 - Apply integration best practices.
 - Prepare for the **Frends Fundamentals Certification**.
 - Build a portfolio-quality integration project.
-
----
 
 ## 🏗️ Project Scenario
 
@@ -52,8 +44,6 @@ When a donor submits a donation, the integration platform is responsible for orc
 - Return the execution result
 
 This workflow will gradually evolve throughout the project as new Frends concepts are introduced.
-
----
 
 ## 🖥️ High-Level Architecture
 
@@ -75,8 +65,6 @@ This workflow will gradually evolve throughout the project as new Frends concept
                     ▼
             Reporting Database
 ```
-
----
 
 ## 📚 Learning Roadmap
 
@@ -126,8 +114,6 @@ This workflow will gradually evolve throughout the project as new Frends concept
 
 Implementation of a complete end-to-end enterprise integration workflow.
 
----
-
 ## 📁 Repository Structure
 
 ```
@@ -157,8 +143,6 @@ integration-playground/
 └── examples/
 ```
 
----
-
 ## 📖 Documentation
 
 | Document | Description |
@@ -173,8 +157,6 @@ integration-playground/
 | Deployment | Deployment and environments |
 | Architecture Decisions | Important architectural decisions throughout the project |
 
----
-
 ## 🎓 Learning Resources
 
 During the project the following study materials will be maintained:
@@ -186,8 +168,6 @@ During the project the following study materials will be maintained:
 - 📝 Cheat Sheets
 - ❓ Quiz Questions
 
----
-
 ## 🛠️ Technologies
 
 - Frends iPaaS
@@ -197,8 +177,6 @@ During the project the following study materials will be maintained:
 - Markdown
 - Mermaid Diagrams
 - Git & GitHub
-
----
 
 ## 📌 Project Status
 
@@ -213,8 +191,6 @@ Current focus:
 - Business analysis
 - Architecture design
 
----
-
 ## 🎯 Long-Term Objective
 
 The final outcome of this repository will be:
@@ -224,8 +200,6 @@ The final outcome of this repository will be:
 - Comprehensive technical documentation
 - Practical knowledge of integration architecture
 - Preparation for the Frends Fundamentals Certification
-
----
 
 ## 📄 License
 
