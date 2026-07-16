@@ -68,8 +68,6 @@ The project includes:
 - Documentation
 - Testing
 
----
-
 # 5. Out of Scope
 
 The following topics are intentionally excluded from this project:
@@ -106,8 +104,6 @@ Frends validates the incoming data, orchestrates communication between participa
 | Email Service | Sends donor notifications |
 | Reporting Database | Stores reporting data |
 
----
-
 # 8. Participating Systems
 
 | System | Responsibility |
@@ -119,8 +115,6 @@ Frends validates the incoming data, orchestrates communication between participa
 | ERP | Registers financial transactions |
 | Email Service | Sends confirmation emails |
 | Reporting Database | Stores reporting information |
-
----
 
 # 9. High-Level Architecture
 
@@ -142,8 +136,6 @@ Frends validates the incoming data, orchestrates communication between participa
                     ▼
            Reporting Database
 ```
-
----
 
 # 10. Functional Requirements
 
@@ -179,8 +171,6 @@ The system shall send a confirmation email to the donor.
 
 The system shall return a response indicating whether the process completed successfully.
 
----
-
 # 11. Non-Functional Requirements
 
 - The solution should be modular.
@@ -189,8 +179,6 @@ The system shall return a response indicating whether the process completed succ
 - Errors should be logged and handled appropriately.
 - Documentation should be maintained throughout the project.
 - Integration processes should be reusable whenever possible.
-
----
 
 # 12. Assumptions
 
@@ -202,8 +190,6 @@ The project assumes that:
 - Frends is responsible only for orchestration and integration.
 - Email notifications can be sent asynchronously.
 - Mock services will replace unavailable external systems during development.
-
----
 
 # 13. Dependencies
 
@@ -228,8 +214,6 @@ The project will be considered successful when:
 - Every lesson contains a practical implementation.
 - The repository can be used as both a portfolio project and a personal learning reference.
 
----
-
 # 15. Success Metrics
 
 The project is considered complete when:
@@ -239,8 +223,6 @@ The project is considered complete when:
 - The end-to-end donation workflow executes successfully.
 - Documentation remains synchronized with implementation.
 - The project can serve as a reusable learning reference.
-
----
 
 # 16. Learning Objectives
 
@@ -257,8 +239,6 @@ By completing this project, the learner will be able to:
 - Deploy integration solutions.
 - Document an integration project professionally.
 
----
-
 # 17. Project Roadmap
 
 | Sprint | Goal |
@@ -269,8 +249,6 @@ By completing this project, the learner will be able to:
 | Sprint 3 | Integrations |
 | Sprint 4 | Monitoring & Deployment |
 | Sprint 5 | Final Project Review |
-
----
 
 # 18. Deliverables
 
@@ -287,8 +265,6 @@ At the end of the project, the following artifacts will be available:
 - Deployment Guide
 - Architecture Decision Records (ADR)
 - Completed Frends Integration Solution
-
- ---
 
 ## Next Document
 
