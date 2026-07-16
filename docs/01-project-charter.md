@@ -239,17 +239,6 @@ By completing this project, the learner will be able to:
 - Deploy integration solutions.
 - Document an integration project professionally.
 
-# 17. Project Roadmap
-
-| Sprint | Goal |
-|---------|------|
-| Sprint 0 | Project Foundation |
-| Sprint 1 | Frends Fundamentals |
-| Sprint 2 | Process Development |
-| Sprint 3 | Integrations |
-| Sprint 4 | Monitoring & Deployment |
-| Sprint 5 | Final Project Review |
-
 # 18. Deliverables
 
 At the end of the project, the following artifacts will be available:

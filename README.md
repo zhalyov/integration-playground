@@ -68,51 +68,17 @@ This workflow will gradually evolve throughout the project as new Frends concept
 
 ## 📚 Learning Roadmap
 
-### Sprint 0 – Project Foundation
+Sprint 0 – Foundation
 
-- Repository setup
-- Project Charter
-- Business Requirements
-- Architecture
-- API Contracts
+Sprint 1 – Business Analysis
 
-### Sprint 1 – Frends Fundamentals
+Sprint 2 – Architecture
 
-- Integration
-- iPaaS
-- Architecture
-- Portal
-- Agent
-- Processes
-- Triggers
+Sprint 3 – API Design
 
-### Sprint 2 – Process Development
+Sprint 4 – Frends Development
 
-- Variables
-- Tasks
-- Expressions
-- Flow Control
-- Subprocesses
-
-### Sprint 3 – Integrations
-
-- REST APIs
-- Data Mapping
-- Authentication
-- Error Handling
-- External Systems
-
-### Sprint 4 – Monitoring & Deployment
-
-- Monitoring
-- Logging
-- Deployment
-- Environments
-- Versioning
-
-### Sprint 5 – Final Integration
-
-Implementation of a complete end-to-end enterprise integration workflow.
+Sprint 5 – Final Integration
 
 ## 📁 Repository Structure
 
@@ -153,17 +119,9 @@ integration-playground/
 
 ## 📖 Documentation
 
-| Document | Description |
-|----------|-------------|
-| Project Charter | Project vision, scope and objectives |
-| Business Requirements | Functional and non-functional requirements |
-| System Architecture | High-level architecture and participating systems |
-| API Contracts | Request/response specifications |
-| Process Design | Frends process design documentation |
-| Testing | Test scenarios and validation |
-| Monitoring | Logging and monitoring strategy |
-| Deployment | Deployment and environments |
-| Architecture Decisions | Important architectural decisions throughout the project |
+Project documentation can be found in the [**docs/**](../integration-playground/docs/) directory.
+
+Engineering standards are maintained separately in the [**engineering/**](../integration-playground/engineering/) directory.
 
 ## 🎓 Learning Resources
 

@@ -1,61 +1,51 @@
 # Project Documentation
 
-This directory contains the functional and technical documentation for the **Integration Playground** project.
+This directory contains the documentation describing the **Integration Playground solution**.
 
-The documentation follows the project lifecycle, from business analysis to implementation, testing, and deployment.
-
----
+Each document represents a specific stage of the project lifecycle.
 
 ## Documentation Structure
 
-| Document | Purpose |
-|----------|---------|
-| **01. Project Charter** | Defines the project vision, objectives, scope, and success criteria. |
-| **02. Business Requirements** | Describes the business needs and functional requirements. |
-| **03. System Architecture** | Documents the overall solution architecture and participating systems. |
-| **04. API Contracts** | Defines communication between systems and API specifications. |
-| **05. Process Design** | Describes the Frends integration processes and workflows. |
-| **06. Testing** | Documents test scenarios, validation, and expected results. |
-| **07. Monitoring** | Describes monitoring, logging, and troubleshooting strategies. |
-| **08. Deployment** | Documents environments, deployment process, and release considerations. |
+| Document | Responsibility |
+|----------|----------------|
+| [Project Charter](01-project-charter.md) | Defines the project vision and scope |
+| [Business Requirements](02-business-requirements.md) | Defines the business needs |
+| [System Architecture](03-system-architecture.md) | Describes the solution architecture |
+| [API Contracts](04-api-contracts.md) | Defines communication between systems |
+| [Process Design](05-process-design.md) | Documents Frends processes |
+| [Testing](06-testing.md) | Defines validation scenarios |
+| [Monitoring](07-monitoring.md) | Describes monitoring strategy |
+| [Deployment](08-deployment.md) | Documents deployment considerations |
 
----
-
-## Documentation Flow
+## Documentation Lifecycle
 
 ```text
 Project Charter
-        │
-        ▼
+      │
+      ▼
 Business Requirements
-        │
-        ▼
+      │
+      ▼
 System Architecture
-        │
-        ▼
+      │
+      ▼
 API Contracts
-        │
-        ▼
+      │
+      ▼
 Process Design
-        │
-        ▼
+      │
+      ▼
 Testing
-        │
-        ▼
+      │
+      ▼
 Monitoring
-        │
-        ▼
+      │
+      ▼
 Deployment
 ```
 
----
+## Navigation
 
-## Guiding Principles
+Documents are intended to be read sequentially.
 
-The documentation follows these principles:
-
-- Keep each document focused on a single responsibility.
-- Avoid duplication (DRY).
-- Maintain a single source of truth (SSOT).
-- Update documentation together with implementation.
-- Keep documentation simple, clear, and maintainable.
+Each document builds upon the previous one.

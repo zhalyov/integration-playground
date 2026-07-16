@@ -1,25 +1,27 @@
 # Engineering Handbook
 
-This directory contains the engineering standards and development practices followed throughout the **Integration Playground** project.
+This directory contains the engineering standards and development practices used throughout the **Integration Playground** project.
 
-The purpose of these documents is to ensure consistency, maintainability, and professional engineering practices while developing the project.
+The documents in this directory define **how the project is developed**, while the [`docs/`](../docs/) directory describes **what is being built**.
+
+---
 
 ## Documents
 
 | Document | Purpose |
 |----------|---------|
-| Git Workflow | Defines commit conventions and Git best practices |
-| Versioning Strategy | Defines the project versioning policy |
-| Development Workflow | Describes the development lifecycle followed during the project |
-| Sprint Board | Tracks project progress and milestones |
-| Architecture Decision Records (ADR) | Documents important architectural decisions |
+| [Engineering Principles](engineering-principles.md) | Defines the core engineering principles followed throughout the project. |
+| [Git Workflow](git-workflow.md) | Defines Git usage and commit conventions. |
+| [Project Versioning](project-versioning.md) | Defines the project versioning strategy. |
+| [Development Workflow](development-workflow.md) | Describes the development lifecycle. |
+| [Documentation Standards](.) | Defines documentation conventions and structure. |
+| [Sprint Board](sprint-board.md) | Tracks project progress and milestones. |
+| [Architecture Decisions](../engineering/architecture-decisions/) | Records important engineering and architectural decisions. |
 
-## Guiding Principles
+## Navigation
 
-The engineering documentation follows these principles:
+The documents in this directory are designed to be used as a reference.
 
-- Single Source of Truth (SSOT)
-- Don't Repeat Yourself (DRY)
-- One document = one responsibility
-- Documentation evolves together with the implementation
-- Decisions are documented, not remembered
+Each document covers a specific engineering topic and can be read independently when needed.
+
+As the project evolves, Architecture Decision Records (ADR) will document significant engineering decisions.
