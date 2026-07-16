@@ -1,23 +1,13 @@
 # Project Charter
 
-**Project:** Integration Playground  
-**Version:** 1.0  
-**Status:** Draft  
-**Project Type:** Portfolio & Learning Project  
-**Platform:** Frends iPaaS  
-**Owner:** Zhivka Halyov  
-**Last Updated:** 2026-07-16
-
----
+> Defines the project vision, objectives, scope, and success criteria.
 
 ## Related Documents
 
-- README.md
-- 02-business-requirements.md
-- 03-system-architecture.md
-- 04-api-contracts.md
-
----
+- [README](../README.md)
+- [Business Requirements](02-business-requirements.md)
+- [System Architecture](03-system-architecture.md)
+- [API Contracts](04-api-contracts.md)
 
 # 1. Project Purpose
 
@@ -26,8 +16,6 @@ Integration Playground is a hands-on portfolio and learning project created to g
 The project combines theoretical learning with practical implementation by following the complete lifecycle of an enterprise integration project—from business analysis and architecture through implementation, testing, monitoring, deployment, and documentation.
 
 The primary objective is to develop both **Frends platform knowledge** and **real-world integration engineering skills** while building a portfolio-quality project.
-
----
 
 # 2. Business Problem
 
@@ -45,8 +33,6 @@ Without an integration platform, this process would require either manual work o
 
 The organization requires a centralized integration platform capable of orchestrating the complete donation workflow while ensuring reliable communication between all participating systems.
 
----
-
 # 3. Project Goal
 
 Design and implement a complete integration solution using **Frends**.
@@ -60,8 +46,6 @@ The solution should:
 - Notify external systems.
 - Return the execution result.
 - Provide monitoring and traceability.
-
----
 
 # 4. Project Scope
 
@@ -102,8 +86,6 @@ The following topics are intentionally excluded from this project:
 
 Mock services and simplified APIs will be used whenever appropriate.
 
----
-
 # 6. Business Scenario
 
 A donor submits a donation through the web application.
@@ -111,8 +93,6 @@ A donor submits a donation through the web application.
 The **Backend API** receives the request and forwards it to **Frends**.
 
 Frends validates the incoming data, orchestrates communication between participating systems, synchronizes business information, and returns the execution result back to the caller.
-
----
 
 # 7. Project Stakeholders
 
@@ -308,10 +288,8 @@ At the end of the project, the following artifacts will be available:
 - Architecture Decision Records (ADR)
 - Completed Frends Integration Solution
 
----
+ ---
 
-# 19. Document History
+## Next Document
 
-| Version | Date | Author | Description |
-|---------|------|--------|-------------|
-| 1.0 | 2026-07-16 | Zhivka Halyov | Initial Project Charter |
+➡ [Business Requirements](02-business-requirements.md)
