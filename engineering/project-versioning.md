@@ -62,6 +62,16 @@ v0.1.0
 | Finished System Architecture | v0.3.0 |
 | Small documentation correction | v0.3.1 |
 
+## Release Checklist
+
+Before creating a new release:
+
+- [ ] Sprint completed
+- [ ] Documentation updated
+- [ ] Repository committed
+- [ ] Version tag created
+- [ ] GitHub Release published
+
 ## Related Documents
 
 - [Git Workflow](../engineering/git-workflow.md)
