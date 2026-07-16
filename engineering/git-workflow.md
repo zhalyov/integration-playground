@@ -1,82 +1,88 @@
 # Git Workflow
 
-This document defines the Git workflow used throughout the **Integration Playground** project.
+This document defines the Git conventions used throughout the **Integration Playground** project.
 
-The goal is to keep the Git history clean, readable, and consistent throughout the project.
+Its purpose is to ensure a clean, consistent, and understandable Git history.
 
-## Purpose
+> **Note**
+>
+> Version numbering and release management are documented separately in **Project Versioning**.
 
-The Git workflow establishes a common convention for:
+# Purpose
+
+The Git workflow defines how changes are committed and organized during development.
+
+It establishes conventions for:
 
 - Commit messages
 - Commit granularity
 - Branch usage
-- Collaboration
+- Git best practices
 
-Versioning rules are documented separately in the [Versioning Strategy](versioning-strategy.md).
+# Scope
 
-## Commit Convention
+This document covers **only Git usage**.
+
+It does **not** define:
+
+- Project versioning
+- Release strategy
+- Semantic Versioning
+
+These topics are documented in **Project Versioning**.
+
+# Commit Convention
 
 The project follows the **Conventional Commits** specification.
 
-### Commit Types
+## Commit Types
 
 | Prefix | Purpose | When to Use | Example |
-|---------|---------|-------------|---------|
+|---------|----------|-------------|---------|
 | `docs:` | Documentation | Documentation changes | `docs: add business requirements` |
 | `feat:` | New Feature | Introducing new functionality | `feat: implement receive donation process` |
 | `fix:` | Bug Fix | Correcting incorrect behavior | `fix: correct API response mapping` |
-| `refactor:` | Refactoring | Improving structure without changing behavior | `refactor: simplify process design` |
+| `refactor:` | Refactoring | Improving structure without changing functionality | `refactor: simplify process design` |
 | `test:` | Testing | Adding or updating tests | `test: add donation validation scenarios` |
-| `chore:` | Maintenance | Repository configuration and maintenance | `chore: update repository structure` |
+| `chore:` | Maintenance | Repository configuration or maintenance | `chore: update repository structure` |
 
-## Commit Rules
+# Commit Rules
 
 Every commit should represent **one logical change**.
 
-### Good Examples
+### Every commit should:
 
-```text
-docs: add project charter
+- Represent one logical unit of work.
+- Be written in the imperative mood.
+- Be concise and descriptive.
+- Be understandable without additional context.
+- Be reviewed before committing.
 
-feat: implement receive donation process
+# Commit Examples
 
-fix: correct validation logic
-```
+| ✅ Good | ❌ Avoid |
+|----------|----------|
+| `docs: add project charter` | `updated files` |
+| `docs: add business requirements` | `changes` |
+| `feat: implement receive donation process` | `final version` |
+| `fix: correct validation logic` | `misc updates` |
 
-### Avoid
-
-```text
-updated files
-
-changes
-
-final version
-
-misc updates
-```
-
-Commit messages should:
-
-- be written in the imperative mood
-- describe one logical change
-- remain short and descriptive
-
-## Branch Strategy
+# Branch Strategy
 
 During the learning phase, development is performed directly on the **main** branch.
 
-Feature branches may be introduced later when working on larger features or experiments.
+As the project grows, feature branches may be introduced to simulate collaborative development.
 
-## Best Practices
+# Best Practices
 
-- Make small, focused commits.
+- Keep commits small and focused.
+- Commit after completing a meaningful unit of work.
 - Commit frequently.
-- Avoid mixing documentation and implementation in the same commit whenever possible.
-- Write meaningful commit messages.
 - Review changes before committing.
+- Avoid committing unfinished work whenever possible.
+- Separate documentation changes from implementation changes whenever practical.
 
-## References
+# Related Documents
 
-- [Conventional Commits](https://www.conventionalcommits.org/)
-- [Versioning Strategy](versioning-strategy.md)
+- [Engineering Principles](../engineering/engineering-principles.md)
+- [Project Versioning](../engineering/project-versioning.md)

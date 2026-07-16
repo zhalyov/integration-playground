@@ -1,13 +1,25 @@
-# Project Management
+# Engineering Handbook
 
-This folder contains the project management standards used throughout the Integration Playground project.
+This directory contains the engineering standards and development practices followed throughout the **Integration Playground** project.
+
+The purpose of these documents is to ensure consistency, maintainability, and professional engineering practices while developing the project.
 
 ## Documents
 
 | Document | Purpose |
 |----------|---------|
-| Git Workflow | Commit and release strategy |
-| Versioning Strategy | Semantic versioning rules |
-| Development Workflow | Development lifecycle |
-| Sprint Board | Sprint planning |
-| ADR | Architecture decisions |
+| Git Workflow | Defines commit conventions and Git best practices |
+| Versioning Strategy | Defines the project versioning policy |
+| Development Workflow | Describes the development lifecycle followed during the project |
+| Sprint Board | Tracks project progress and milestones |
+| Architecture Decision Records (ADR) | Documents important architectural decisions |
+
+## Guiding Principles
+
+The engineering documentation follows these principles:
+
+- Single Source of Truth (SSOT)
+- Don't Repeat Yourself (DRY)
+- One document = one responsibility
+- Documentation evolves together with the implementation
+- Decisions are documented, not remembered

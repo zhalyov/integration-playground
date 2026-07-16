@@ -135,11 +135,11 @@ integration-playground/
 ├── engineering/
 │   ├── README.md
 │   ├── git-workflow.md
-│   ├── versioning-strategy.md
+│   ├── project-versioning.md
 │   ├── development-workflow.md
+│   ├── engineering-principles.md
 │   ├── sprint-board.md
 │   └── adr.md
-│   ├── handbook/
 │
 ├── handbook/
 |
