@@ -148,7 +148,9 @@ During the project the following study materials will be maintained:
 
 **Current Phase**
 
-✅ Sprint 0 — Project Foundation
+✅ Sprint 0 – Project Foundation (Completed)
+
+🚧 Sprint 1 – Business Analysis (In Progress)
 
 Current focus:
 
