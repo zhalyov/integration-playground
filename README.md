@@ -132,8 +132,17 @@ integration-playground/
 │   ├── 08-deployment.md
 │   └── 09-architecture-decisions.md
 │
-├── handbook/
+├── engineering/
+│   ├── README.md
+│   ├── git-workflow.md
+│   ├── versioning-strategy.md
+│   ├── development-workflow.md
+│   ├── sprint-board.md
+│   └── adr.md
+│   ├── handbook/
 │
+├── handbook/
+|
 ├── learning-journal/
 │
 ├── diagrams/
