@@ -1,6 +1,6 @@
 # Project Versioning
 
-This document defines the versioning strategy used throughout the Integration Playground project.
+This document defines the versioning strategy used throughout the **Integration Playground** project.
 
 The project follows a simplified Semantic Versioning approach adapted for an educational portfolio project.
 

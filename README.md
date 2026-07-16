@@ -129,8 +129,7 @@ integration-playground/
 │   ├── 05-process-design.md
 │   ├── 06-testing.md
 │   ├── 07-monitoring.md
-│   ├── 08-deployment.md
-│   └── 09-architecture-decisions.md
+│   └── 08-deployment.md
 │
 ├── engineering/
 │   ├── README.md
@@ -139,7 +138,7 @@ integration-playground/
 │   ├── development-workflow.md
 │   ├── engineering-principles.md
 │   ├── sprint-board.md
-│   └── adr.md
+│   └── architecture-decisions/
 │
 ├── handbook/
 |
