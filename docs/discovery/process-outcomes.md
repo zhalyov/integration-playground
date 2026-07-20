@@ -4,61 +4,43 @@
 
 Defines the possible outcomes of the donation processing workflow.
 
-The process outcome is determined after all critical business operations have been evaluated.
-
 ## Scope
 
-This document describes the possible completion states of the donation process.
+This document describes the possible end states of the donation process.
 
-The conditions leading to each outcome are documented in the **Failure Handling Matrix**.
+Failure classification and recovery behavior are documented separately in the **Failure Handling Matrix** and **Retry Strategy**.
 
 # Process Outcomes
 
 | Outcome | Description |
 |----------|-------------|
 | Success | All critical business operations completed successfully. |
+| Failed | One or more critical business operations could not be completed successfully. |
 | Completed with Warnings | All critical business operations completed successfully, but one or more non-critical operations failed. |
-| Failed | One or more critical business operations failed. |
 
-# Outcome Classification
+# Outcome Determination
 
-## Success
+The final process outcome is determined after all critical business operations have been evaluated.
 
-A process is considered successful when:
+| Condition | Process Outcome |
+|-----------|-----------------|
+| All critical operations completed successfully | **Success** |
+| One or more critical operations failed | **Failed** |
+| All critical operations completed successfully, but one or more non-critical operations failed | **Completed with Warnings** |
 
-- the request is valid;
-- the campaign exists;
-- the donor has been found or created;
-- the donation has been registered;
-- the financial record has been created.
+# Outcome Principles
 
-## Completed with Warnings
+The donation process follows these principles:
 
-A process is considered completed with warnings when:
-
-- all critical business operations completed successfully;
-- one or more post-processing operations failed.
-
-Typical examples include:
-
-- confirmation email delivery failure;
-- reporting database update failure.
-
-## Failed
-
-A process is considered failed when at least one critical business operation cannot be completed.
-
-Typical examples include:
-
-- campaign validation failure;
-- CRM unavailable after all recovery attempts;
-- ERP unavailable after all recovery attempts;
-- invalid donation request.
+- The final outcome is determined only after all critical business operations have been evaluated.
+- A failure of any critical business operation results in a **Failed** outcome.
+- Failures occurring after successful completion of all critical business operations do not invalidate the donation.
+- Non-critical failures result in **Completed with Warnings**.
 
 # Related Documents
 
 | Document | Purpose |
 |----------|---------|
-| [Business Rules](business-rules.md) | Business rules governing process execution |
-| [Failure Handling Matrix](failure-handling-matrix.md) | Failure classification and recovery |
-| [Retry Strategy](retry-strategy.md) | Retry behaviour for each failure type |
+| [Failure Handling Matrix](failure-handling-matrix.md) | Classifies failures and their business impact |
+| [Retry Strategy](retry-strategy.md) | Defines recovery mechanisms for retryable failures |
+| [Business Rules](business-rules.md) | Defines the business rules governing process execution |

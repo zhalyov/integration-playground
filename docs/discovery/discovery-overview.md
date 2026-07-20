@@ -50,20 +50,19 @@ The Discovery phase established the following architectural principles:
 - The solution is designed to be resilient to temporary infrastructure failures.
 - Duplicate requests are handled through an idempotent processing strategy.
 
-# Discovery Deliverables
+# Discovery Findings
 
-| Document | Responsibility |
-|----------|----------------|
-| [Business Context](business-context.md) | Defines the business problem, objectives and project scope |
-| [Domain Model](domain-model.md) | Describes the business entities and their relationships |
-| [System Context](system-context.md) | Identifies participating systems, responsibilities and communication |
-| [Business Rules](business-rules.md) | Defines the confirmed business rules |
-| [Constraints](constraints.md) | Documents architectural and business constraints |
-| [Architecture Decisions](architecture-decisions.md) | Captures confirmed architectural decisions |
-| [Process Outcomes](process-outcomes.md) | Defines the possible business process outcomes |
-| [Failure Handling Matrix](failure-handling-matrix.md) | Documents failure classification and recovery strategy |
-| [Retry Strategy](retry-strategy.md) | Defines retry policies and recovery principles |
-| [Parking Lot](parking-lot.md) | Captures deferred topics and future enhancements |
+The Discovery phase established the following:
+
+- Business context and project scope
+- Participating systems and their responsibilities
+- Business domain model
+- Business rules
+- System ownership
+- Process outcomes
+- Failure classification
+- Retry strategy
+- Architectural decisions
 
 # Discovery Outcome
 
@@ -82,17 +81,25 @@ The Discovery phase established:
 
 The confirmed information documented during Discovery forms the baseline for the remaining project lifecycle.
 
-# Project Continuation
+# Discovery Result
 
-The Discovery deliverables provide the foundation for the following documentation:
+The Discovery phase provides the baseline for:
 
-- Business Requirements Specification
+- Business Requirements
 - System Architecture
 - API Contracts
 - Process Design
-- Testing
-- Monitoring
-- Deployment
+
+# Key Outcomes
+
+The Discovery phase established the following key principles:
+
+- Frends acts as an orchestration platform.
+- Business data remains owned by the respective Source of Truth systems.
+- Critical business operations determine process success.
+- Post-processing operations do not invalidate successful business transactions.
+- Temporary technical failures are handled through controlled recovery mechanisms.
+- Duplicate requests are processed using an idempotent strategy.
 
 # Summary
 

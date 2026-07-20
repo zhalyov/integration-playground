@@ -1,62 +1,47 @@
-# Retry Strategy
+# Recovery Strategy by Operation
 
 ## Purpose
 
-Defines the retry strategy applied by the integration solution when recovering from temporary technical failures.
+Defines the recovery mechanisms applied by the integration solution when handling transient technical failures.
 
-The retry strategy aims to improve reliability while preventing duplicate business transactions.
+The retry strategy improves solution reliability while preventing duplicate business transactions.
 
 ## Scope
 
-This document describes:
+This document defines:
 
-- retry classification;
+- recovery strategies for retryable operations;
 - retry rules;
-- retry decision matrix;
 - ERP timeout recovery;
 - retry principles.
 
 Failure classification and process outcomes are documented separately.
 
-# Retry Classification
+# Recovery Strategies
 
-| Operation | Retry Strategy | Notes |
-|-----------|----------------|------|
+| Operation | Recovery Strategy | Notes |
+|-----------|-------------------|------|
 | CRM | Bounded Synchronous Retry | Critical business operation |
 | ERP | Bounded Synchronous Retry with State Verification | Critical business operation |
-| Email Service | Asynchronous Retry | Post-processing |
-| Reporting Database | Asynchronous Retry | Post-processing |
+| Email Service | Asynchronous Retry | Post-processing operation |
+| Reporting Database | Asynchronous Retry | Post-processing operation |
 
 # Retry Rules
 
 | ID | Rule |
 |----|------|
 | RP-001 | Retry shall be performed only for transient technical failures. |
-| RP-002 | Business validation errors shall never be retried. |
+| RP-002 | Business validation failures shall never be retried. |
 | RP-003 | Retry configuration shall remain environment-specific. |
-| RP-004 | ERP timeout recovery requires state verification before retrying the create operation. |
+| RP-004 | ERP timeout recovery shall verify the current ERP state before retrying the create operation. |
 | RP-005 | Post-processing operations shall use asynchronous retry whenever possible. |
 | RP-006 | Maximum retry attempts shall be configurable. |
-
-# Retry Decision Matrix
-
-| Failure Type | Retry | Reason |
-|--------------|:-----:|--------|
-| Network Timeout | ✅ | Temporary communication failure |
-| HTTP 500 | ✅ | Temporary server failure |
-| HTTP 503 | ✅ | Service temporarily unavailable |
-| HTTP 429 | ✅ | Retry according to Retry-After header when available |
-| Connection Refused | ✅ | Temporary infrastructure failure |
-| DNS Resolution Failure | ✅ | Temporary infrastructure failure |
-| Invalid Request | ❌ | Business validation error |
-| Campaign Not Found | ❌ | Business validation error |
-| Duplicate Donation | ❌ | Already successfully processed |
 
 # ERP Timeout Recovery
 
 When an ERP timeout occurs, the integration shall not immediately retry the create operation.
 
-Instead, it shall verify whether the Financial Record has already been created.
+Instead, the integration shall verify whether the Financial Record has already been created by using the request identifier before issuing another create request.
 
 ```text
 Create Financial Record
@@ -65,31 +50,10 @@ Create Financial Record
 Timeout
         │
         ▼
-Lookup by externalDonationId
+Lookup by request identifier
         │
    ┌────┴────┐
    │         │
 Exists     Not Found
    │         │
 Success    Retry
-```
-
-This approach prevents duplicate Financial Records.
-
-# Retry Principles
-
-The retry strategy follows the following principles:
-
-- Retry only temporary technical failures.
-- Never retry business validation errors.
-- Verify system state before retrying non-idempotent operations.
-- Never allow retry logic to create duplicate business records.
-- Keep retry behavior configurable rather than hardcoded.
-
-# Related Documents
-
-| Document | Purpose |
-|----------|---------|
-| [Failure Handling Matrix](failure-handling-matrix.md) | Failure classification |
-| [Architecture Decisions](architecture-decisions.md) | Architectural decisions supporting the retry strategy |
-| [Business Rules](business-rules.md) | Business rules governing process execution |
