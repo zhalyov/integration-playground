@@ -180,18 +180,7 @@ The system shall return a response indicating whether the process completed succ
 - Documentation should be maintained throughout the project.
 - Integration processes should be reusable whenever possible.
 
-# 12. Assumptions
-
-The project assumes that:
-
-- The CRM system exposes REST APIs.
-- The ERP system accepts JSON payloads.
-- The Backend API is responsible for authentication.
-- Frends is responsible only for orchestration and integration.
-- Email notifications can be sent asynchronously.
-- Mock services will replace unavailable external systems during development.
-
-# 13. Dependencies
+# 12. Dependencies
 
 The implementation depends on the availability of:
 
@@ -202,9 +191,7 @@ The implementation depends on the availability of:
 - Email Service
 - Reporting Database
 
----
-
-# 14. Success Criteria
+# 13. Success Criteria
 
 The project will be considered successful when:
 
@@ -214,7 +201,7 @@ The project will be considered successful when:
 - Every lesson contains a practical implementation.
 - The repository can be used as both a portfolio project and a personal learning reference.
 
-# 15. Success Metrics
+# 14. Success Metrics
 
 The project is considered complete when:
 
@@ -224,7 +211,7 @@ The project is considered complete when:
 - Documentation remains synchronized with implementation.
 - The project can serve as a reusable learning reference.
 
-# 16. Learning Objectives
+# 15. Learning Objectives
 
 By completing this project, the learner will be able to:
 
@@ -239,7 +226,7 @@ By completing this project, the learner will be able to:
 - Deploy integration solutions.
 - Document an integration project professionally.
 
-# 18. Deliverables
+# 16. Deliverables
 
 At the end of the project, the following artifacts will be available:
 
