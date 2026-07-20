@@ -68,17 +68,26 @@ This workflow will gradually evolve throughout the project as new Frends concept
 
 ## 📚 Learning Roadmap
 
-Sprint 0 – Foundation
+- Sprint 0 - Foundation (Completed)
+- Sprint 1 - Business Discovery (Completed)
+- Sprint 2 - Business Requirements Specification (Next)
+- Sprint 3 - System Architecture
+- Sprint 4 - API Design
+- Sprint 5 - Frends Development
+- Sprint 6 - Final Integration
 
-Sprint 1 – Business Analysis
+## ✅ Discovery Highlights
 
-Sprint 2 – Architecture
+The Discovery phase is complete and documented under `docs/discovery/`.
 
-Sprint 3 – API Design
+Confirmed solution principles include:
 
-Sprint 4 – Frends Development
-
-Sprint 5 – Final Integration
+- Frends as the orchestration layer
+- Synchronous execution for critical business operations
+- Non-critical handling for Email Service and Reporting Database
+- Idempotent processing using `externalDonationId`
+- Duplicate requests return the original successful response
+- ERP timeout recovery with state verification before retry
 
 ## 📁 Repository Structure
 
@@ -88,6 +97,7 @@ integration-playground/
 ├── README.md
 │
 ├── docs/
+│   ├── README.md
 │   ├── 01-project-charter.md
 │   ├── 02-business-requirements.md
 │   ├── 03-system-architecture.md
@@ -95,7 +105,20 @@ integration-playground/
 │   ├── 05-process-design.md
 │   ├── 06-testing.md
 │   ├── 07-monitoring.md
-│   └── 08-deployment.md
+│   ├── 08-deployment.md
+│   └── discovery/
+│       ├── README.md
+│       ├── discovery-overview.md
+│       ├── business-context.md
+│       ├── domain-model.md
+│       ├── system-context.md
+│       ├── business-rules.md
+│       ├── constraints.md
+│       ├── architecture-decisions.md
+│       ├── process-outcomes.md
+│       ├── failure-handling-matrix.md
+│       ├── retry-strategy.md
+│       └── parking-lot.md
 │
 ├── engineering/
 │   ├── README.md
@@ -119,9 +142,11 @@ integration-playground/
 
 ## 📖 Documentation
 
-Project documentation can be found in the [**docs/**](../integration-playground/docs/) directory.
+Project documentation can be found in the [**docs/**](./docs/) directory.
 
-Engineering standards are maintained separately in the [**engineering/**](../integration-playground/engineering/) directory.
+Discovery documentation can be found in [**docs/discovery/**](./docs/discovery/).
+
+Engineering standards are maintained separately in the [**engineering/**](./engineering/) directory.
 
 ## 🎓 Learning Resources
 
@@ -148,16 +173,17 @@ During the project the following study materials will be maintained:
 
 **Current Phase**
 
-✅ Sprint 0 – Project Foundation (Completed)
+- ✅ Sprint 0 – Project Foundation (Completed)
+- ✅ Sprint 1 – Business Discovery (Completed)
+- 🚧 Sprint 2 – Business Requirements Specification (In Progress)
 
-🚧 Sprint 1 – Business Analysis (In Progress)
+**Current Focus**
 
-Current focus:
-
-- Repository setup
-- Documentation
-- Business analysis
-- Architecture design
+- Transform Discovery findings into Business Requirements
+- Define functional requirements
+- Define non-functional requirements
+- Document use cases and acceptance criteria
+- Establish requirements traceability
 
 ## 🎯 Long-Term Objective
 

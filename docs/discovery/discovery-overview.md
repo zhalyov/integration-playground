@@ -10,7 +10,7 @@ The purpose of the Discovery phase is to establish a shared understanding of the
 
 This document summarizes the outcome of the Discovery phase.
 
-Detailed information is documented in the individual Discovery documents referenced below.
+Detailed information is available in the dedicated Discovery documents.
 
 # Discovery Status
 
@@ -52,57 +52,18 @@ The Discovery phase established the following architectural principles:
 
 # Discovery Findings
 
-The Discovery phase established the following:
+The Discovery phase established a shared understanding of:
 
-- Business context and project scope
-- Participating systems and their responsibilities
-- Business domain model
-- Business rules
-- System ownership
-- Process outcomes
-- Failure classification
-- Retry strategy
-- Architectural decisions
+- the business problem and project scope;
+- participating systems and their responsibilities;
+- business entities and ownership;
+- business rules governing donation processing;
+- process outcomes and failure handling;
+- recovery strategy for temporary technical failures;
+- architectural decisions guiding the solution design.
 
-# Discovery Outcome
+# Outcome
 
-The Discovery phase established:
+The Discovery phase established the business and architectural baseline for the Integration Playground solution.
 
-- Business context and project scope
-- Domain model and business ownership
-- Participating systems and system boundaries
-- Business rules
-- Architectural constraints
-- Architectural decisions
-- Process outcome definitions
-- Failure handling strategy
-- Retry strategy
-- Idempotency strategy
-
-The confirmed information documented during Discovery forms the baseline for the remaining project lifecycle.
-
-# Discovery Result
-
-The Discovery phase provides the baseline for:
-
-- Business Requirements
-- System Architecture
-- API Contracts
-- Process Design
-
-# Key Outcomes
-
-The Discovery phase established the following key principles:
-
-- Frends acts as an orchestration platform.
-- Business data remains owned by the respective Source of Truth systems.
-- Critical business operations determine process success.
-- Post-processing operations do not invalidate successful business transactions.
-- Temporary technical failures are handled through controlled recovery mechanisms.
-- Duplicate requests are processed using an idempotent strategy.
-
-# Summary
-
-The Discovery phase successfully established the business and technical foundation of the Integration Playground solution.
-
-All confirmed knowledge has been organized into dedicated Discovery documents, each with a single responsibility, allowing subsequent project phases to build upon a consistent and validated architectural baseline.
+The confirmed knowledge documented during this phase provides the foundation for the Business Requirements Specification and the subsequent design and implementation phases.

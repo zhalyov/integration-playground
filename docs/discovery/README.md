@@ -35,7 +35,7 @@ System Context
 Business Rules
       │
       ▼
-Constraints & Assumptions
+Constraints
       │
       ▼
 Architecture Decisions

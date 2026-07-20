@@ -26,7 +26,7 @@ Every piece of information should exist in only one place.
 
 Examples:
 
-- Versioning → Versioning Strategy
+- Versioning → Project Versioning
 - Git conventions → Git Workflow
 - Architecture → System Architecture
 - Business rules → Business Requirements
@@ -73,7 +73,7 @@ Examples:
 | Business Requirements | Business expectations |
 | System Architecture | System design |
 | Git Workflow | Git conventions |
-| Versioning Strategy | Versioning policy |
+| Project Versioning | Versioning policy |
 
 ## 7. Real-World Mindset
 
